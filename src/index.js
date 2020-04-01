@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import './index.css';
-import CustomNavbar from './components/CustomNavbar';
+import Home from './components/Home';
 
 class App extends Component {
     render() {
         return (
             <>
-                <CustomNavbar />
+                <Home />
 
             </>
         )
