@@ -51,7 +51,7 @@ export class CustomNavbar extends React.Component {
                     <Switch> 
                         <Route exact path='/portfolio' component={Home}></Route> 
                         <Route exact path='/projects' component={Projects}></Route> 
-                        <Route path="/" component={Home}></Route>
+                        <Route exact path="/" component={Home}></Route>
                     </Switch> 
                 </Router>
             </>
