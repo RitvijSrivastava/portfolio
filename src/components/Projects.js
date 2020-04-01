@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
-import CustomNavbar from './CustomNavbar';
+// import CustomNavbar from './CustomNavbar';
 
 
 export class Projects extends Component {
     render() {
         return (
             <>
-                <CustomNavbar />
+                {/* <CustomNavbar /> */}
                 <Container className="test-pro" fluid>
                     <h1>Adding Soon Enough!</h1>
 
