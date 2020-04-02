@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Container } from 'react-bootstrap'
-import '../styles/SubTopic.css';
+import styles from '../styles/SubTopic.module.css';
 
 export class SubTopic extends Component {
     render() {
         return (
             <>
-              <Container className="container ">
+              <Container className={styles.container}>
                 <h4>About: </h4>
                 <p className="align-left">I am a Student. So, broke and full of hope. Ergo, I Code. I ,primarily, am an app (Flutter) Developer but I have worked
                     on Java (Java Spring) and ReactJS before. (This website made possible by ReactJS). In terms of capability, I am more of 

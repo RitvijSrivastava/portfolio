@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import MainHeading from './MainHeading';
 import SubTopic from './SubTopic';
 import ContactMe from './ContactMe';
-// import CustomNavbar from './CustomNavbar';
+import LargePicture from './LargePicture';
 
 export class Home extends Component {
     render() {
         return (
             <>
-                {/* <CustomNavbar /> */}
                 <MainHeading />
+                <LargePicture />
                 <SubTopic />
                 <ContactMe />
             </>

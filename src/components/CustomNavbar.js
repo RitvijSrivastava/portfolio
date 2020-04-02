@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row , Col} from 'react-bootstrap';
-import '../styles/CustomNavbar.css';
+import styles from '../styles/CustomNavbar.module.css';
 
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'; 
 import Home from './Home';
@@ -10,7 +10,7 @@ import Projects from './Projects';
 // Function to display Logo
 function Logo() {
     return (
-        <div className="logo" >
+        <div className={styles.logo} >
             RS
         </div>
     );
@@ -21,25 +21,25 @@ export class CustomNavbar extends React.Component {
         return (
             <>
                 <Router>
-                    <Container fluid className="custom-margin">
+                    <Container fluid className={styles.custom_margin}>
                         <Row>
-                            <Col xs={4} lg={10} md={8} > 
-                                {/* <a href="/" className="logo-link">
-                                    <Logo />
-                                </a> */}
-                                <Link to="/portfolio"> <Logo /> </Link>
+                            <Col xs={3} lg={9} md={9} > 
+                                <Link to="/portfolio" className={styles.logo_link}> <Logo /> </Link>
                             </Col>
                             <Row>    
-                                <Col className="center">
-                                    {/* <a href="/">
-                                        Home
-                                    </a> */}
+                                <Col className={styles.center}>
+                                    {/* <a href="/">Home</a> */}
                                     <Link to="/portfolio"> Home </Link>
                                 </Col>
-                                <Col className="center">
-                                    {/* <a href="/projects">
-                                        Projects
-                                    </a> */}
+                                <Col className={styles.center}>
+                                    {/* <a href="/projects">Resume</a> */}
+
+                                    <Link to="/projects"> Resume</Link>
+                                   
+                                </Col>
+                                <Col className={styles.center}>
+                                    {/* <a href="/projects">Projects</a> */}
+
                                     <Link to="/projects"> Projects</Link>
                                    
                                 </Col>
