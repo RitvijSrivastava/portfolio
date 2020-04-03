@@ -5,6 +5,7 @@ import styles from '../styles/CustomNavbar.module.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'; 
 import Home from './Home';
 import Projects from './Projects';
+import Resume from './Resume';
 
 
 // Function to display Logo
@@ -34,7 +35,7 @@ export class CustomNavbar extends React.Component {
                                 <Col className={styles.center}>
                                     {/* <a href="/projects">Resume</a> */}
 
-                                    <Link to="/projects"> Resume</Link>
+                                    <Link to="/resume"> Resume</Link>
                                    
                                 </Col>
                                 <Col className={styles.center}>
@@ -51,6 +52,7 @@ export class CustomNavbar extends React.Component {
                     <Switch> 
                         <Route exact path='/portfolio' component={Home}></Route> 
                         <Route exact path='/projects' component={Projects}></Route> 
+                        <Route exact path='/resume' component={Resume}></Route>
                         <Route exact path="/" component={Home}></Route>
                     </Switch> 
                 </Router>

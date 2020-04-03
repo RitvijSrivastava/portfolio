@@ -1,0 +1,180 @@
+h2 {
+    margin: 0;
+    padding: 0;
+    color: #454A4E;
+    font-weight: 600;
+}
+
+.sidebar_separation {
+    text-align: left;
+    width: 80%;
+}
+
+.separator {
+    margin-top: 20%;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .separator {
+        margin-top: 5%;
+    }
+}
+
+.details {
+    text-align: left;
+    margin-left: 12%;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .sidebar_separation {
+        text-align: left;
+        width: 90%;
+    }
+
+    .details {
+        text-align: left;
+        margin-left: 8%;
+    }
+}
+
+
+.icon {
+    margin-top: 2px;
+}
+
+h6 {
+    padding-left: 20px;
+    font-weight: 450;
+}
+
+.container {
+    margin-top: 10%;
+    text-align: center;
+    padding: 0;
+}
+
+.image {
+    max-width: 60%;
+    max-height: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+.sidecol1{
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidecol2{
+    text-align: left;
+    align-content: left;
+    padding: 0;
+    margin-left: 10%;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .sidecol2{
+        text-align: left;
+        align-content: left;
+        padding: 0;
+        margin-left: 8%;
+        margin-right: 3%;
+    }
+}
+
+.title {
+    margin-top: 5%;
+    padding: 0;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 5%;
+    color: grey;
+    font-weight: 350;
+}
+
+.topic1 {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.content1 {
+    color: grey;
+}
+
+
+h4 {
+    color: #2C3539;
+    font-weight: 550;
+}
+
+.pill {
+    display: flex;
+    margin-top: 5px;
+    padding-top: 6px;
+    float: right;
+    height: 25px;
+    width: 85px;
+    font-size: 10px;
+    font-weight: bold;
+    color:navy;
+    background-color: orange;
+    border-radius: 50px;
+
+}
+
+.work_breaker {
+    color: black;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .work_breaker {
+        display: none;
+    }
+}
+
+.work_container {
+    border: none;    
+}
+
+.date, pre {
+    display: flex;
+    float: right;
+    font-weight: 200;
+    color: grey;
+    font-size: small;
+}
+
+.work_icon {
+    margin-top: 3px;
+    margin-right: 5px;
+    
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .work_container {   
+       margin-top: 0;      
+       padding-top: 3%;
+       padding-bottom: 2%; 
+       border-style: solid;
+       border-width: thin;
+       border-color: lightgray;
+       border-radius: 10px;
+       margin-bottom: 10%;
+    }
+} 
+
+.work_company, .work_location {
+    display: flex;
+    float: left;
+    font-weight: 200;
+    color: grey;
+    font-size: small;
+}
