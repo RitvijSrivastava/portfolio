@@ -121,12 +121,21 @@ function Education() {
       <br />
       <EducationCard degreeName={"Bachelor in Computer Science Engineering"} collegeName={"Manipal University Jaipur"} startYear={"August 2018"} endYear={"May 2022"}/>
       <hr className={styles.work_breaker}/>
-      <EducationCard degreeName={"Class 12"} collegeName={"City Montessori School"} startYear={"August 2016"} endYear={"May 2017"}/>
+      <EducationCard degreeName={"Senior Secondary School"} collegeName={"City Montessori School"} startYear={"August 2016"} endYear={"May 2017"}/>
       <hr className={styles.work_breaker}/>
-      <EducationCard degreeName={"Class 10"} collegeName={"City Montessori School"} startYear={"August 2014"} endYear={"May 2015"}/>
+      <EducationCard degreeName={"High School"} collegeName={"City Montessori School"} startYear={"August 2014"} endYear={"May 2015"}/>
       <br />
       <br />
       <br />
+    </>
+  );
+}
+
+
+function Skills(){
+  return (
+    <>
+
     </>
   );
 }
@@ -172,6 +181,7 @@ export class Resume extends Component {
                       <ProfessionalSummary />
                       <WorkExperience />
                       <Education />
+                      <Skills />
                     </Col>
                   </Row>
               </Container>
