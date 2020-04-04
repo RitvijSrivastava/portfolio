@@ -55,23 +55,15 @@ function EducationCard(props) {
     <>
     <Container className={styles.work_container}>
       <Col>
-        <Row>
-          <Col>
+        <Row>          
             <h4>{props.degreeName}</h4>
-          </Col>
         </Row>
         <Row>
-          <Col>
-            <Row>
-            <Col>
               <p className={styles.work_company}>
                 <FontAwesomeIcon icon={faGraduationCap} size="1x" color="grey" className={styles.work_icon} />
                 {props.collegeName}
               </p>
-            </Col>
-            </Row>
-          </Col>
-          <Col >
+          <Col>
           <p className={styles.date}>
             <FontAwesomeIcon icon={faCalendarAlt} size="1x" color="grey" className={styles.work_icon} />
             {props.startYear}<pre> - </pre>
