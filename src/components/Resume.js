@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCalendarAlt, faBuilding } from '@fortawesome/free-regular-svg-icons'
 import { faMapMarkerAlt, faUniversity, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import styles from '../styles/Resume.module.css';
-import { Container, Image, Col, Row } from 'react-bootstrap';
+import { Container, Image, Col, Row, ProgressBar } from 'react-bootstrap';
 
+// UTILITY FUNCTION for work experience section cards
 function WorkCard(props) {
   return (
     <>
@@ -48,8 +49,7 @@ function WorkCard(props) {
   );
 }
 
-
-
+// UTILITY FUNCTION for education section cards
 function EducationCard(props) {
   return (
     <>
@@ -78,6 +78,26 @@ function EducationCard(props) {
   );
 }
 
+
+// UTILITY FUNCTION for Skills section cards
+function SkillsCard(props) {
+  return (
+    <>
+      <Container>
+        <Row>
+          <Col xs={5} lg={3}>
+            <h4>{props.skillName}</h4>
+          </Col>
+          <Col >
+            <ProgressBar now={props.value} className={styles.progress_bar}/>
+          </Col>
+        </Row>
+      </Container>
+    </>
+  );
+}
+
+// Professional Summary Section 
 function ProfessionalSummary() {
   return (
     <>
@@ -95,6 +115,7 @@ function ProfessionalSummary() {
   );
 }
 
+// Work Experience section (calls WorkCard)
 function WorkExperience() {
   return (
     <>
@@ -112,7 +133,7 @@ function WorkExperience() {
   );
 }
 
-
+// Education Section (calls EducationCard)
 function Education() {
   return (
     <>
@@ -131,10 +152,31 @@ function Education() {
   );
 }
 
-
+// Skils Section (calls SkillsCard)
 function Skills(){
   return (
     <>
+      <h2>Skills</h2>
+      <br />
+      <br />
+      <SkillsCard skillName={"Flutter"} value={80}/>
+      <br />
+      <SkillsCard skillName={"ReactJS"} value={75}/>
+      <br />
+      <SkillsCard skillName={"CPP"} value={48}/>
+      <br />
+      <SkillsCard skillName={"Python"} value={60}/>
+      <br />
+      <SkillsCard skillName={"Java"} value={57}/>
+      <br />
+      <SkillsCard skillName={"Git"} value={78}/>
+      <br />
+      <SkillsCard skillName={"Firebase"} value={55}/>
+      <br />
+      <SkillsCard skillName={"MySQL"} value={60}/>
+      <br />
+      <SkillsCard skillName={"NodeJS"} value={55}/>
+      <br />
 
     </>
   );

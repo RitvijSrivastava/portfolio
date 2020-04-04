@@ -178,3 +178,8 @@ h4 {
     color: grey;
     font-size: small;
 }
+
+.progress_bar {
+    margin-top: 8px;
+    height: 12px;
+}
