@@ -1,22 +1,10 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
-import './index.css';
-// import Home from './components/Home';
-import CustomNavbar from './components/CustomNavbar';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Home from './components/Home';
 
-class App extends Component {
-    render() {
-        return (
-            <>
-                <CustomNavbar />
+const App = () => {
+  return <Home />;
+};
 
-            </>
-        )
-    }
-}
-
-// =========================================
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));

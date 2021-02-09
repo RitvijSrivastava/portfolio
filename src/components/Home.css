@@ -1,0 +1,35 @@
+.center {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+a {
+  margin: 1rem;
+}
+
+.github:hover,
+.mail:hover {
+  color: white;
+}
+
+.linkedin:hover {
+  color: #0e76a8;
+}
