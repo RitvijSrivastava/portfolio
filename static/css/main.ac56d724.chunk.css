@@ -1,0 +1,2 @@
+body{display:flex;justify-content:center;align-items:center;background-color:#000}.center,body{text-align:center}.center{font-family:"Roboto",sans-serif;margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}h1{font-size:6rem;color:#fff}@media screen and (max-width:600px){h1{font-size:4rem}}a{margin:1rem}.github:hover,.mail:hover{color:#fff}.linkedin:hover{color:#0e76a8}
+/*# sourceMappingURL=main.ac56d724.chunk.css.map */
